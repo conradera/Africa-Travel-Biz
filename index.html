@@ -1,0 +1,728 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa Travel Biz - Your Concierge for Business and Research in Africa</title>
+    <meta name="description" content="Africa Travel Biz - Your concierge for smooth, safe, and reliable business trips and research in Africa. Supporting your business through trusted local networks and Japanese-quality coordination.">
+    <meta name="theme-color" content="#1E2D56">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="#" class="nav-logo" id="nav-logo" aria-label="Africa Travel Biz Home">
+                    <span class="logo-accent">Africa Travel Biz</span>
+                </a>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-desktop">
+                    <button class="nav-link" onclick="scrollToSection('services')" data-i18n="nav.services">Services</button>
+                    <button class="nav-link" onclick="scrollToSection('solution')" data-i18n="nav.solution">Solution</button>
+                    <button class="nav-link" onclick="scrollToSection('strengths')" data-i18n="nav.whyUs">Why Us</button>
+                    <button class="nav-link" onclick="scrollToSection('cases')" data-i18n="nav.cases">Case Studies</button>
+            <button class="nav-link" onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')" data-i18n="nav.consultation">Free Consultation</button>
+            <button class="language-toggle" onclick="toggleLanguage()" id="language-toggle">
+                <span data-i18n="nav.language">EN</span>
+            </button>
+        </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        <!-- Mobile Menu -->
+        <div class="nav-mobile" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+                <button class="nav-mobile-link" onclick="scrollToSection('services')" data-i18n="nav.services">Services</button>
+                <button class="nav-mobile-link" onclick="scrollToSection('solution')" data-i18n="nav.solution">Solution</button>
+                <button class="nav-mobile-link" onclick="scrollToSection('strengths')" data-i18n="nav.whyUs">Why Us</button>
+                <button class="nav-mobile-link" onclick="scrollToSection('cases')" data-i18n="nav.cases">Case Studies</button>
+            <button class="nav-mobile-link" onclick="scrollToSection('contact')" data-i18n="nav.contact">Contact</button>
+                <button class="btn btn-primary nav-mobile-btn" onclick="scrollToSection('contact')" data-i18n="nav.consultation">Free Consultation</button>
+            <button class="language-toggle nav-mobile-btn" onclick="toggleLanguage()" id="mobile-language-toggle">
+                <span data-i18n="nav.language">EN</span>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background Slider -->
+        <div class="hero-slider">
+            <div class="hero-slide" style="background-image: url('Slider/Slider 1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Slider/Slider 2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Slider/Slider 3.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Slider/Slider 4.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Slider/Slider 5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Slider/Slider 6.jpeg');"></div>
+        </div>
+        
+        <!-- Overlay for better text readability -->
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Main Headline -->
+                <h1 class="hero-title" data-i18n="hero.title">
+                    アフリカ出張・視察を、安心・安全・スムーズに。<br />
+                    Smooth, Safe, and Reliable Business Trips & Research in Africa.
+                </h1>
+
+                <!-- Subtext -->
+                <p class="hero-description" data-i18n="hero.description">
+                    現地ネットワーク × 日本品質で、貴社のアフリカビジネスを支援します。<br />
+                    Supporting your business in Africa through trusted local networks and Japanese-quality coordination.
+                </p>
+
+                <!-- CTA Button -->
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="scrollToSection('contact')" data-i18n="hero.cta">
+                        とりあえず気軽に無料相談<br />
+                        Request a Free Consultation
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">54</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.countries">African Countries</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">100%</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.local">Local Network</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">24/7</div>
+                        <div class="hero-stat-label" data-i18n="hero.stats.support">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <div class="hero-scroll-indicator">
+                <div class="hero-scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="empathy">
+        <div class="container">
+            <div class="empathy-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="problem.title">
+                        アフリカ出張や視察で、こんなお悩みはありませんか？<br />
+                        Are you facing these challenges with your business trip or research in Africa?
+                    </h2>
+                </div>
+
+                <!-- Pain Points Grid -->
+                <div class="empathy-grid">
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="problem.issues.visa.title">ビザやワクチンなど、渡航に必要なものがわからない</h3>
+                            <p data-i18n="problem.issues.visa.desc">Not sure about visa or vaccination requirements?</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-shuttle-van"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="problem.issues.transfer.title">空港送迎の方法がわからない</h3>
+                            <p data-i18n="problem.issues.transfer.desc">Unclear how to arrange airport transfers?</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="problem.issues.hotel.title">ネットで見つけたホテルが安全で清潔か不安</h3>
+                            <p data-i18n="problem.issues.hotel.desc">Worried whether online-listed hotels are safe and clean?</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="problem.issues.interpreter.title">通訳や現地コーディネーターを探したいが、信頼できる人が見つからない</h3>
+                            <p data-i18n="problem.issues.interpreter.desc">Need interpreters or coordinators you can actually trust?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-left">
+                    <p class="section-subtitle" data-i18n="solution.subtitle">Our Solution</p>
+                    <h2 class="section-title" data-i18n="solution.title">
+                        現地と直接つながる、唯一の「アフリカ出張コンシェルジュ」<br />
+                        The Only Concierge Directly Connected with Africa.
+                    </h2>
+                    <p class="section-description" data-i18n="solution.description">
+                        JICA海外協力隊やTokyo 2020組織委員会で築いたネットワークを活かし、
+                        アフリカ全域の現地パートナーと直接連携。安心・柔軟・低コストな現地支援を実現。<br />
+                        <br />
+                        Leveraging networks built through JICA and the Tokyo 2020 Olympic Committee,
+                        we work directly with trusted local partners across Africa — ensuring safe, flexible, and cost-efficient support.
+                    </p>
+                </div>
+
+                <div class="solution-right">
+                    <div class="solution-image">
+                        <img src="Africa Net.jpg" alt="Africa Network - Direct Connection with Africa" style="width: 100%; height: auto; border-radius: 1rem; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Role Section -->
+    <section class="producer">
+        <div class="container">
+            <div class="producer-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="role.subtitle">Our Role</p>
+                    <h2 class="section-title" data-i18n="role.title">
+                        私たちは旅行代理店ではなく、アフリカビジネスのコンシェルジュです。<br />
+                        We Are Not a Travel Agency — We're Your Business Concierge in Africa.
+                    </h2>
+                </div>
+
+                <!-- Role Description -->
+                <div class="producer-principle">
+                    <div class="producer-principle-content">
+                        <p data-i18n="role.description" style="font-size: 1.25rem; line-height: 1.8;">
+                            貴社の目的・予算・条件に合わせて、最適な人・場所・リソースを直接コーディネート。<br />
+                            単なる手配ではなく、成果を出すための現地戦略づくりを支援します。<br />
+                            <br />
+                            We coordinate the best local people, locations, and resources based on your goals and budget.<br />
+                            Our focus is not just on arrangements, but on strategies that drive results.<br />
+                            <br />
+                            <em>"現地の知人を頼るような安心感"を、企業に。<br />
+                            "Giving your company the same peace of mind as having a trusted local friend."</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="empathy">
+        <div class="container">
+            <div class="empathy-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="services.title">サービス内容</h2>
+                    <p class="section-description" data-i18n="services.subtitle">Service Categories</p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="empathy-grid">
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="services.1.title">出張・視察サポート</h3>
+                            <p data-i18n="services.1.desc">ビザ・安全情報の案内／宿泊・移動の提案／通訳の紹介<br />Visa & safety guidance / Accommodation & transport suggestions / Interpreter introductions</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="services.2.title">現地調査・取材代行</h3>
+                            <p data-i18n="services.2.desc">現地リサーチ・写真・映像・インタビューの代行取得<br />On-site research, photography, video, and interviews on your behalf.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="services.3.title">ビジネス・プロジェクト支援</h3>
+                            <p data-i18n="services.3.desc">現地商談・調査・CSR活動の調整・実施支援<br />Coordination and assistance for business meetings, CSR, or field studies.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="services.4.title">プロモーション・広報</h3>
+                            <p data-i18n="services.4.desc">撮影・取材同行、SNS・広報素材の制作サポート<br />Support for filming, PR content creation, and social media storytelling.</p>
+                        </div>
+                    </div>
+
+                    <div class="empathy-item">
+                        <div class="empathy-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="empathy-text">
+                            <h3 data-i18n="services.5.title">安全・緊急サポート</h3>
+                            <p data-i18n="services.5.desc">医療・治安・移動トラブルの緊急対応・現地支援<br />Emergency response and on-site support for medical, security, or travel issues.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hero-cta" style="margin-top: 3rem;">
+                    <button class="btn btn-primary btn-lg" onclick="scrollToSection('contact')" data-i18n="services.cta">
+                        サービスの詳細を相談する<br />
+                        Request Service Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-left">
+                    <p class="section-subtitle" data-i18n="strengths.subtitle">Why Choose Us</p>
+                    <h2 class="section-title" data-i18n="strengths.title">強み</h2>
+                    <p class="section-description" data-i18n="strengths.description">Our Competitive Advantages</p>
+                </div>
+
+                <div class="solution-right">
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="strengths.1.title">アフリカ54カ国に広がる信頼ネットワーク</h3>
+                                <p data-i18n="strengths.1.desc">Trusted network across 54 African countries</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="strengths.2.title">現地直結でスピード・コスト効率に優れる</h3>
+                                <p data-i18n="strengths.2.desc">Direct coordination for speed and cost efficiency</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="strengths.3.title">日本人スタッフが一貫サポート</h3>
+                                <p data-i18n="strengths.3.desc">End-to-end support by Japan-based specialists</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="strengths.4.title">多言語対応（日本語・英語・フランス語）</h3>
+                                <p data-i18n="strengths.4.desc">Multilingual operation (JP / EN / FR)</p>
+                            </div>
+                        </div>
+
+                        <div class="solution-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="solution-item-content">
+                                <h3 data-i18n="strengths.5.title">現地雇用を生む社会的インパクト</h3>
+                                <p data-i18n="strengths.5.desc">Creating local employment and social impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="case-studies">
+        <div class="container">
+            <div class="case-studies-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="cases.subtitle">Case Studies</p>
+                    <h2 class="section-title" data-i18n="cases.title">導入事例</h2>
+                </div>
+
+                <!-- Cases Grid -->
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Transportation</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">Kenya</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="cases.1.title">運送業A社（ケニア）</h3>
+                        <p class="case-study-description" data-i18n="cases.1.desc">商談調整・通訳アサイン・安全移動サポート<br />Business coordination, interpreter assignment, secure mobility support</p>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Research</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">Tanzania</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="cases.2.title">大学B研究室（タンザニア）</h3>
+                        <p class="case-study-description" data-i18n="cases.2.desc">通訳紹介・宿泊提案・調査ルート設計<br />Interpreter introduction, lodging suggestions, research route design</p>
+                    </div>
+
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <span class="case-study-industry">Media</span>
+                                <span class="case-study-separator">•</span>
+                                <span class="case-study-region">Ethiopia</span>
+                            </div>
+                        </div>
+                        <h3 class="case-study-title" data-i18n="cases.3.title">大手商社C社（エチオピア）</h3>
+                        <p class="case-study-description" data-i18n="cases.3.desc">現地商材撮影・取材代行・映像素材提供<br />Local product shooting, interview delegation, and video material production</p>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hero-cta" style="margin-top: 3rem;">
+                    <button class="btn btn-outline btn-lg" onclick="scrollToSection('contact')" data-i18n="cases.cta">
+                        他の事例について問い合わせる<br />
+                        Inquire About More Cases
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section class="process">
+        <div class="container">
+            <div class="process-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="flow.subtitle">How It Works</p>
+                    <h2 class="section-title" data-i18n="flow.title">ご利用の流れ</h2>
+                </div>
+
+                <!-- Flow Steps -->
+                <div class="process-timeline-tree">
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 01</div>
+                                <h3 data-i18n="flow.steps.1.title">お問い合わせ</h3>
+                                <p data-i18n="flow.steps.1.desc">Contact Us</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">01</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 02</div>
+                                <h3 data-i18n="flow.steps.2.title">ヒアリング</h3>
+                                <p data-i18n="flow.steps.2.desc">Hearing & Consultation</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">02</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 03</div>
+                                <h3 data-i18n="flow.steps.3.title">ご提案・見積</h3>
+                                <p data-i18n="flow.steps.3.desc">Proposal & Estimate</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">03</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 04</div>
+                                <h3 data-i18n="flow.steps.4.title">ご契約・準備</h3>
+                                <p data-i18n="flow.steps.4.desc">Agreement & Preparation</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">04</div>
+                    </div>
+
+                    <div class="process-step-tree">
+                        <div class="process-step-card">
+                            <div class="process-step-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="process-step-text">
+                                <div class="process-step-number">STEP 05</div>
+                                <h3 data-i18n="flow.steps.5.title">実施・報告・アフターサポート</h3>
+                                <p data-i18n="flow.steps.5.desc">Execution, Reporting & After-Support</p>
+                            </div>
+                        </div>
+                        <div class="process-step-number-circle">05</div>
+                    </div>
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="process-cta">
+                    <div class="process-cta-content">
+                        <p data-i18n="flow.cta">初めてでも、専任担当がしっかり伴走します。<br />Even first-time clients receive full support from a dedicated consultant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <p class="section-subtitle" data-i18n="finalCta.subtitle">Get Started Today</p>
+                    <h2 class="section-title" data-i18n="finalCta.title">
+                        とりあえず気軽に無料相談を予約する<br />
+                        Request a Free Consultation — No Obligation
+                    </h2>
+                    <p class="section-description" data-i18n="finalCta.description">
+                        初回相談は無料です。お気軽にお問い合わせください。<br />
+                        First consultation is free. Feel free to contact us.
+                    </p>
+                </div>
+
+                <div class="contact-main">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <h3 data-i18n="contact.info.title">Get in Touch</h3>
+                            <p data-i18n="contact.info.description">
+                                We typically respond within 24 hours. For urgent matters, 
+                                please contact us directly. All initial consultations are 
+                                confidential and non-binding.
+                            </p>
+                        </div>
+
+                        <!-- Contact Details -->
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label" data-i18n="contact.details.email">Email</p>
+                                    <a href="mailto:info@africatravelbiz.com" class="contact-detail-link">
+                                        info@africatravelbiz.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label" data-i18n="contact.details.office">Office</p>
+                                    <p class="contact-detail-text">
+                                        <span data-i18n="contact.details.location">Tokyo, Japan</span><br />
+                                        <span class="contact-detail-note" data-i18n="contact.details.addressNote">
+                                            (Exact address shared after initial consultation)
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="contact-hours">
+                            <h4 data-i18n="contact.hours.title">Business Hours</h4>
+                            <div class="contact-hours-content">
+                                <p data-i18n="contact.hours.weekdays">Monday – Friday: 9:00 AM – 6:00 PM JST</p>
+                                <p class="contact-hours-note" data-i18n="contact.hours.weekends">
+                                    Weekend consultations available by appointment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.form.name">Name *</label>
+                                <input type="text" id="name" name="name" required minlength="2" maxlength="100" placeholder="田中太郎" data-i18n-placeholder="contact.form.namePlaceholder" autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" data-i18n="contact.form.company">Company Name *</label>
+                                <input type="text" id="company" name="company" required minlength="2" maxlength="100" placeholder="ABC株式会社" data-i18n-placeholder="contact.form.companyPlaceholder" autocomplete="organization">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.form.email">Email Address *</label>
+                                <input type="email" id="email" name="email" required maxlength="254" placeholder="tanaka@example.com" data-i18n-placeholder="contact.form.emailPlaceholder" autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.form.phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" maxlength="20" placeholder="+81-90-xxxx-xxxx (optional)" data-i18n-placeholder="contact.form.phonePlaceholder" autocomplete="tel">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.form.message">Message *</label>
+                                <textarea id="message" name="message" required minlength="10" maxlength="2000" rows="5" placeholder="Tell us about your business needs, timeline, or any specific questions..." data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                                <span class="btn-text" data-i18n="contact.form.submit">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <p class="form-disclaimer" data-i18n="contact.form.disclaimer">
+                                By submitting, you agree to our privacy policy. We will not share 
+                                your information with third parties.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <!-- Company Info -->
+                    <div class="footer-company">
+                        <h3>Africa Travel Biz</h3>
+                        <p data-i18n="footer.description">
+                            Your concierge for safe, smooth, and reliable business trips and research in Africa.
+                            From Tokyo to Africa, we walk alongside your business ambitions.
+                        </p>
+                        <div class="footer-social">
+                            <a href="mailto:info@africatravelbiz.com" class="footer-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.services.title">Services</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#services" data-i18n="footer.services.travel">Business Trip Support</a></li>
+                            <li><a href="#services" data-i18n="footer.services.research">Local Research</a></li>
+                            <li><a href="#services" data-i18n="footer.services.business">Project Support</a></li>
+                            <li><a href="#services" data-i18n="footer.services.safety">Emergency Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Regions -->
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.regions.title">Regions</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#" data-i18n="footer.regions.eastAfrica">East Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.westAfrica">West Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.southAfrica">Central Africa</a></li>
+                            <li><a href="#" data-i18n="footer.regions.southAfrica">Southern Africa</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright" data-i18n="footer.copyright">
+                        © <span id="current-year">2024</span> Africa Travel Biz. All rights reserved.
+                    </p>
+                    <div class="footer-legal">
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                        <a href="#contact" data-i18n="footer.contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Large Company Name -->
+                <div class="footer-brand">
+                    <h1 class="footer-brand-name">Africa Travel Biz</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message" data-i18n="toast.success">Message sent successfully! We'll respond within 24 hours.</span>
+        </div>
+    </div>
+
+    <script src="translations.js?v=4"></script>
+    <script src="script.js?v=4"></script>
+    </body>
+  </html>
