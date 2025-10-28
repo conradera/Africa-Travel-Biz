@@ -290,7 +290,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 120px;
-    background: transparent;
+    background: #000;
     color: var(--white);
     overflow: hidden;
 }
@@ -300,6 +300,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: 1;
+    background-color: #000;
 }
 
 .hero-slide {
@@ -310,54 +311,60 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     animation: hero-slider 48s infinite; /* 6 images × 8 seconds each */
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 2s ease-in-out;
 }
 
 .hero-slide:nth-child(1) {
     animation-delay: 0s;
     opacity: 1;
+    z-index: 6;
 }
 
 .hero-slide:nth-child(2) {
     animation-delay: 8s;
+    z-index: 5;
 }
 
 .hero-slide:nth-child(3) {
     animation-delay: 16s;
+    z-index: 4;
 }
 
 .hero-slide:nth-child(4) {
     animation-delay: 24s;
+    z-index: 3;
 }
 
 .hero-slide:nth-child(5) {
     animation-delay: 32s;
+    z-index: 2;
 }
 
 .hero-slide:nth-child(6) {
     animation-delay: 40s;
+    z-index: 1;
 }
 
 @keyframes hero-slider {
     0% {
         opacity: 0;
     }
-    0.5% {
+    1% {
         opacity: 0;
     }
-    1.56% {
+    1.5% {
+        opacity: 0.3;
+    }
+    2% {
         opacity: 1;
     }
-    14.58% {
+    14.5% {
         opacity: 1;
     }
-    15.62% {
-        opacity: 1;
-    }
-    16.66% {
+    15.5% {
         opacity: 0.5;
     }
-    17.19% {
+    16.5% {
         opacity: 0;
     }
     100% {
