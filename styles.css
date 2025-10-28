@@ -1591,8 +1591,6 @@ html[lang="ja"] .section-description {
 .footer-brand {
     text-align: center;
     margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     overflow: hidden;
     max-width: 100%;
