@@ -10,6 +10,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitBtn = document.getElementById('submit-btn');
     const toast = document.getElementById('toast');
 
+    // Lazy load hero slider images from data-bg attributes
+    function loadHeroSlides() {
+        const slides = document.querySelectorAll('.hero-slide[data-bg]');
+        slides.forEach((slide, index) => {
+            const bgImage = slide.getAttribute('data-bg');
+            
+            // Load first image immediately, others lazily
+            if (index === 0) {
+                slide.style.backgroundImage = `url('${bgImage}')`;
+            } else {
+                // Use IntersectionObserver or load all slides for continuous animation
+                // Load all slides but browser will cache efficiently
+                const img = new Image();
+                img.src = bgImage;
+                img.onload = () => {
+                    slide.style.backgroundImage = `url('${bgImage}')`;
+                };
+            }
+        });
+    }
+
+    loadHeroSlides();
+
     // Set current year
     if (currentYear) {
         currentYear.textContent = new Date().getFullYear();

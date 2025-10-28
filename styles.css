@@ -47,6 +47,23 @@ body {
     --container-max-width: 1200px;
 }
 
+/* Accessibility - Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    z-index: 10000;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Utility Classes */
 .container {
     max-width: var(--container-max-width);
@@ -312,6 +329,11 @@ body {
     opacity: 0;
     animation: hero-slider 48s infinite; /* 6 images × 8 seconds each */
     transition: opacity 2s ease-in-out;
+}
+
+/* Load background images from data-bg attribute for performance */
+.hero-slide[data-bg] {
+    background-image: none; /* Initial state - will be set by JS */
 }
 
 .hero-slide:nth-child(1) {
