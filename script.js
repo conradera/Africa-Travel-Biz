@@ -155,11 +155,28 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate form submission (replace with actual API call)
+        // Send email via mailto with form data
         try {
-            // In a real implementation, you would send the data to your server
-            // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) });
+            // Prepare email content
+            const subject = encodeURIComponent(`New Inquiry from Africa Travel Biz - ${data.company}`);
+            const phoneInfo = data.phone ? `Phone: ${data.phone}\n` : '';
+            const emailBody = encodeURIComponent(
+                `New Contact Form Submission from Africa Travel Biz Website\n\n` +
+                `Name: ${data.name}\n` +
+                `Company: ${data.company}\n` +
+                `Email: ${data.email}\n` +
+                `${phoneInfo}` +
+                `\nMessage:\n${data.message}\n\n` +
+                `Submitted on: ${new Date().toLocaleString()}`
+            );
             
+            // Create mailto link
+            const mailtoLink = `mailto:admin@africa-travel.info?subject=${subject}&body=${emailBody}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Show success message after a short delay
             setTimeout(() => {
                 // Reset form
                 contactForm.reset();
@@ -169,13 +186,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitBtn.disabled = false;
                 
                 // Show success message
-                showToast('Message sent successfully! We\'ll respond within 24 hours.', 'success');
-            }, 1500);
+                showToast('Your email client is opening. If it doesn\'t open, copy your message and send manually to admin@africa-travel.info', 'success');
+            }, 500);
         } catch (error) {
             // Handle submission error
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-            showToast('Sorry, there was an error sending your message. Please try again.', 'error');
+            showToast('Sorry, there was an error. Please email admin@africa-travel.info directly.', 'error');
         }
     }
 
