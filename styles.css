@@ -327,12 +327,12 @@ body {
     overflow: hidden;
 }
 
-/* Background Slider - 6 images with 8-second transitions */
+/* Background Slider - 7 images with smooth transitions */
 .hero-slider {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background-color: #000;
+    background-color: transparent;
 }
 
 .hero-slide {
@@ -342,8 +342,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
-    animation: hero-slider 48s infinite; /* 6 images × 8 seconds each */
-    transition: opacity 2s ease-in-out;
+    animation: hero-slider 56s infinite; /* 7 images × 8 seconds each */
+    transition: opacity 0.3s ease;
 }
 
 /* Load background images from data-bg attribute for performance */
@@ -354,31 +354,36 @@ body {
 .hero-slide:nth-child(1) {
     animation-delay: 0s;
     opacity: 1;
-    z-index: 6;
+    z-index: 7;
 }
 
 .hero-slide:nth-child(2) {
     animation-delay: 8s;
-    z-index: 5;
+    z-index: 6;
 }
 
 .hero-slide:nth-child(3) {
     animation-delay: 16s;
-    z-index: 4;
+    z-index: 5;
 }
 
 .hero-slide:nth-child(4) {
     animation-delay: 24s;
-    z-index: 3;
+    z-index: 4;
 }
 
 .hero-slide:nth-child(5) {
     animation-delay: 32s;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero-slide:nth-child(6) {
     animation-delay: 40s;
+    z-index: 2;
+}
+
+.hero-slide:nth-child(7) {
+    animation-delay: 48s;
     z-index: 1;
 }
 
@@ -386,22 +391,16 @@ body {
     0% {
         opacity: 0;
     }
-    1% {
+    0.5% {
         opacity: 0;
     }
-    1.5% {
-        opacity: 0.3;
+    1% {
+        opacity: 1;
     }
-    2% {
+    14% {
         opacity: 1;
     }
     14.5% {
-        opacity: 1;
-    }
-    15.5% {
-        opacity: 0.5;
-    }
-    16.5% {
         opacity: 0;
     }
     100% {
@@ -1498,6 +1497,13 @@ html[lang="ja"] .section-description {
     font-size: 1.25rem;
     color: var(--accent-color);
     margin-bottom: 1rem;
+}
+
+.footer-company-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .footer-company p {
