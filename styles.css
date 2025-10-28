@@ -175,15 +175,30 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.25rem;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--white);
     transition: var(--transition);
 }
 
+.logo-image {
+    height: 3rem;
+    width: auto;
+    transition: var(--transition);
+    display: block;
+}
+
+.nav-logo:hover .logo-image {
+    transform: scale(1.05);
+}
+
 .nav.scrolled .nav-logo {
     color: var(--text-primary);
+}
+
+.nav.scrolled .logo-image {
+    filter: brightness(0.2);
 }
 
 .logo-accent {
@@ -713,8 +728,28 @@ html[lang="ja"] .section-description {
 /* Producer Section */
 .producer {
     padding: 5rem 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-image: url('banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--white);
+    position: relative;
+}
+
+.producer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.producer .container {
+    position: relative;
+    z-index: 1;
 }
 
 .producer .section-subtitle {
@@ -1555,6 +1590,16 @@ html[lang="ja"] .section-description {
     width: 100%;
     overflow: hidden;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo-image {
+    height: 4rem;
+    width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .footer-brand-name {
@@ -1803,6 +1848,10 @@ html[lang="ja"] .section-description {
     .footer-brand-name {
         font-size: clamp(24px, 5vw, 45px);
     }
+    
+    .footer-logo-image {
+        height: 3rem;
+    }
 
     /* Toast */
     .toast {
@@ -1822,6 +1871,10 @@ html[lang="ja"] .section-description {
     .footer-brand-name {
         font-size: clamp(20px, 5vw, 28px);
         letter-spacing: -0.005em;
+    }
+    
+    .footer-logo-image {
+        height: 2.5rem;
     }
 
     /* Typography */
@@ -2000,6 +2053,10 @@ html[lang="ja"] .section-description {
         line-height: 1.1;
         letter-spacing: -0.01em;
     }
+    
+    .footer-logo-image {
+        height: 2rem;
+    }
 
     .footer-main {
         gap: 1.5rem;
@@ -2016,7 +2073,12 @@ html[lang="ja"] .section-description {
 
     /* Navigation */
     .nav-logo {
-        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-image {
+        height: 2.5rem;
     }
 
     .nav-mobile {

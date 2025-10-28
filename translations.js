@@ -182,7 +182,8 @@ const translations = {
             }
         },
         footer: {
-            description: "Your concierge for safe, smooth, and reliable business trips and research in Africa.",
+            companyName: "Africa Travel Biz",
+            description: "Your concierge for safe, smooth, and reliable business trips and research in Africa.<br>From Tokyo to Africa, we walk alongside your business ambitions.",
             services: {
                 title: "Services",
                 travel: "Business Trip Support",
@@ -216,7 +217,7 @@ const translations = {
             language: "JP"
         },
         hero: {
-            title: "アフリカ出張・視察を、安心・安全・スムーズに。",
+            title: "アフリカ出張・視察を<br />安心・安全・スムーズに。",
             description: "現地ネットワーク × 日本品質で、貴社のアフリカビジネスを支援します。",
             cta: "とりあえず気軽に無料相談",
             stats: {
@@ -387,7 +388,8 @@ const translations = {
             }
         },
         footer: {
-            description: "アフリカでの安全でスムーズで信頼性の高いビジネス旅行と研究のためのコンシェルジュ。",
+            companyName: "Africa Travel Biz",
+            description: "アフリカでの安全でスムーズで信頼性の高いビジネス旅行と研究のためのコンシェルジュ。<br>東京からアフリカへ、貴社のビジネス野望をともに歩みます。",
             services: {
                 title: "サービス",
                 travel: "出張支援",
