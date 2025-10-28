@@ -155,44 +155,84 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Send email via mailto with form data
-        try {
-            // Prepare email content
+        // Check if EmailJS is properly configured
+        const publicKey = window.emailjs?.account?.publicKey;
+        const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS Service ID
+        const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS Template ID
+        
+        // If EmailJS credentials are not configured, use simple mailto fallback
+        if (!publicKey || serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID') {
+            // Fallback: Use simple mailto with pre-filled data
             const subject = encodeURIComponent(`New Inquiry from Africa Travel Biz - ${data.company}`);
             const phoneInfo = data.phone ? `Phone: ${data.phone}\n` : '';
             const emailBody = encodeURIComponent(
-                `New Contact Form Submission from Africa Travel Biz Website\n\n` +
+                `New Contact Form Submission\n\n` +
                 `Name: ${data.name}\n` +
                 `Company: ${data.company}\n` +
                 `Email: ${data.email}\n` +
                 `${phoneInfo}` +
                 `\nMessage:\n${data.message}\n\n` +
-                `Submitted on: ${new Date().toLocaleString()}`
+                `Submitted: ${new Date().toLocaleString()}`
             );
             
-            // Create mailto link
-            const mailtoLink = `mailto:admin@africa-travel.info?subject=${subject}&body=${emailBody}`;
-            
-            // Open default email client
-            window.location.href = mailtoLink;
-            
-            // Show success message after a short delay
-            setTimeout(() => {
-                // Reset form
-                contactForm.reset();
+            // Try to open mailto link
+            try {
+                window.location.href = `mailto:admin@africa-travel.info?subject=${subject}&body=${emailBody}`;
                 
-                // Reset button
+                // Reset form and show message
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    showToast('Your email client is opening. If it doesn\'t, please email admin@africa-travel.info manually.', 'success');
+                }, 500);
+            } catch (error) {
+                // Reset on error
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-                
-                // Show success message
-                showToast('Your email client is opening. If it doesn\'t open, copy your message and send manually to admin@africa-travel.info', 'success');
-            }, 500);
+                showToast('Please email admin@africa-travel.info directly with your inquiry.', 'error');
+            }
+            return;
+        }
+
+        // EmailJS is configured - send email directly
+        try {
+            // Initialize EmailJS if not already initialized
+            if (!window.emailjs.account) {
+                window.emailjs.init(publicKey);
+            }
+            
+            // Prepare email template parameters
+            const templateParams = {
+                to_email: 'admin@africa-travel.info',
+                from_name: data.name,
+                from_email: data.email,
+                company: data.company,
+                phone: data.phone || 'Not provided',
+                message: data.message,
+                submission_date: new Date().toLocaleString(),
+                subject: `New Inquiry from Africa Travel Biz - ${data.company}`
+            };
+
+            // Send email using EmailJS
+            window.emailjs.send(serviceId, templateId, templateParams)
+                .then(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    showToast('Message sent successfully! We\'ll respond within 24 hours.', 'success');
+                })
+                .catch((error) => {
+                    console.error('EmailJS Error:', error);
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    showToast('Error sending email. Please try again or email admin@africa-travel.info directly.', 'error');
+                });
         } catch (error) {
-            // Handle submission error
+            console.error('Configuration Error:', error);
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-            showToast('Sorry, there was an error. Please email admin@africa-travel.info directly.', 'error');
+            showToast('Please configure EmailJS or email admin@africa-travel.info directly.', 'error');
         }
     }
 
