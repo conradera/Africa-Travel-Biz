@@ -19,11 +19,11 @@ body {
 
 /* CSS Variables - New Color Palette */
 :root {
-    --primary-color: #022B3A;
-    --accent-color: #1F7A8C;
-    --accent-hover: #1a6b7a;
-    --secondary-color: #1F7A8C;
-    --light-bg: #BFDBF7;
+    --primary-color: #1A3C6E;
+    --accent-color: #E67E22;
+    --accent-hover: #d2691e;
+    --secondary-color: #E67E22;
+    --light-bg: #F5F5F5;
     --white: #ffffff;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
@@ -34,7 +34,7 @@ body {
     --gray-700: #495057;
     --gray-800: #343a40;
     --gray-900: #212529;
-    --text-primary: #022B3A;
+    --text-primary: #1A3C6E;
     --text-secondary: #4a5568;
     --text-light: #ffffff;
     --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -549,7 +549,7 @@ html[lang="ja"] .section-description {
     flex-shrink: 0;
     width: 3rem;
     height: 3rem;
-    background-color: rgba(249, 160, 63, 0.1);
+    background-color: rgba(230, 126, 34, 0.1);
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -716,7 +716,7 @@ html[lang="ja"] .section-description {
 }
 
 .producer-card-lkc {
-    background: linear-gradient(135deg, rgba(249, 160, 63, 0.2) 0%, rgba(249, 160, 63, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.2) 0%, rgba(230, 126, 34, 0.05) 100%);
     border: 2px solid var(--accent-color);
 }
 
@@ -777,11 +777,11 @@ html[lang="ja"] .section-description {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background-color: rgba(249, 160, 63, 0.1);
+    background-color: rgba(230, 126, 34, 0.1);
     backdrop-filter: blur(10px);
     padding: 1rem 2rem;
     border-radius: 2rem;
-    border: 1px solid rgba(249, 160, 63, 0.3);
+    border: 1px solid rgba(230, 126, 34, 0.3);
 }
 
 .producer-principle-content i {
@@ -1033,7 +1033,7 @@ html[lang="ja"] .section-description {
 .case-study-icon {
     width: 3rem;
     height: 3rem;
-    background-color: rgba(249, 160, 63, 0.15);
+    background-color: rgba(230, 126, 34, 0.15);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -1185,7 +1185,7 @@ html[lang="ja"] .section-description {
 .team-highlight-icon {
     width: 4rem;
     height: 4rem;
-    background-color: rgba(249, 160, 63, 0.2);
+    background-color: rgba(230, 126, 34, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1294,7 +1294,7 @@ html[lang="ja"] .section-description {
 .contact-detail-icon {
     width: 3rem;
     height: 3rem;
-    background-color: rgba(249, 160, 63, 0.1);
+    background-color: rgba(230, 126, 34, 0.1);
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -1401,7 +1401,7 @@ html[lang="ja"] .section-description {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(249, 160, 63, 0.1);
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
 }
 
 .form-group textarea {
