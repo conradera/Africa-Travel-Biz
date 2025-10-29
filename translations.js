@@ -124,6 +124,18 @@ const translations = {
             "3": {
                 title: "Trading Firm C (Ethiopia)",
                 desc: "Local product shooting, interview delegation, and video material production"
+            },
+            "4": {
+                title: "NGO Organization D (Uganda)",
+                desc: "NGO Organization D (Uganda): Conducted local partner research and interviews, providing audio, images, and a summarized report."
+            },
+            "5": {
+                title: "Startup E (Rwanda)",
+                desc: "Startup E (Rwanda): Designed and coordinated a business tour including company visits, university links, and investor meetups."
+            },
+            "6": {
+                title: "Media Production F (Morocco)",
+                desc: "Media Production F (Morocco): Supported documentary filming through permit coordination and on-site logistics, enabling a successful shoot within a tight schedule."
             }
         },
         flow: {
@@ -338,6 +350,18 @@ const translations = {
             "3": {
                 title: "大手商社C社（エチオピア）",
                 desc: "現地商材撮影・取材代行・映像素材提供"
+            },
+            "4": {
+                title: "NGO団体D（ウガンダ）",
+                desc: "現地パートナー調査・インタビュー代行・報告書作成支援"
+            },
+            "5": {
+                title: "スタートアップE社（ルワンダ）",
+                desc: "視察プラン提案・現地コーディネート・成果報告支援"
+            },
+            "6": {
+                title: "メディア制作F社（モロッコ）",
+                desc: "ドキュメンタリー撮影支援・取材調整・ロケコーディネート"
             }
         },
         flow: {
