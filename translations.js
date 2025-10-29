@@ -235,7 +235,7 @@ const translations = {
             }
         },
         problem: {
-            title: "アフリカ出張や視察で、こんなお悩みはありませんか？",
+            title: "アフリカ出張や視察で<br />こんなお悩みはありませんか？",
             issues: {
                 visa: {
                     title: "ビザやワクチンなど、渡航に必要なものがわからない",
