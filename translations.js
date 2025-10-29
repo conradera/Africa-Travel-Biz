@@ -16,28 +16,36 @@ const translations = {
             cta: "Request a Free Consultation — No Obligation",
             stats: {
                 countries: "African Countries",
-                local: "Local Network",
-                support: "Support"
+                local: "Customer Support",
+                support: "Response Time"
             }
         },
         problem: {
             title: "Are you facing these challenges with your business trip or research in Africa?",
             issues: {
                 visa: {
-                    title: "Visa & Travel Requirements",
+                    title: "ビザやワクチンなど、渡航に必要なものがわからない",
                     desc: "Not sure about visa or vaccination requirements?"
                 },
                 transfer: {
-                    title: "Airport Transfers",
+                    title: "空港送迎の方法がわからない",
                     desc: "Unclear how to arrange airport transfers?"
                 },
                 hotel: {
-                    title: "Hotel Safety & Cleanliness",
+                    title: "ネットで見つけたホテルが安全で清潔か不安",
                     desc: "Worried whether online-listed hotels are safe and clean?"
                 },
                 interpreter: {
-                    title: "Trusted Interpreters & Coordinators",
+                    title: "通訳や現地コーディネーターを探したいが、信頼できる人が見つからない",
                     desc: "Need interpreters or coordinators you can actually trust?"
+                },
+                meeting: {
+                    title: "現地企業や団体とのアポ調整が難しく、スケジュール管理に時間がかかる",
+                    desc: "Struggling to coordinate meetings or schedules with local companies or organizations?"
+                },
+                business: {
+                    title: "視察で得た情報をどう事業化につなげるか分からない",
+                    desc: "Unsure how to turn what you learned during the trip into an actual business opportunity?"
                 }
             }
         },
@@ -48,7 +56,7 @@ const translations = {
         },
         role: {
             subtitle: "Our Role",
-            title: "We Are Not a Travel Agency — We're Your Business Concierge in Africa.",
+            title: "私たちは旅行代理店ではなく<br />アフリカビジネスのコンシェルジュです。<br />We Are Not a Travel Agency — We're Your Business Concierge in Africa.",
             description: "We coordinate the best local people, locations, and resources based on your goals and budget. Our focus is not just on arrangements, but on strategies that drive results."
         },
         services: {
@@ -222,8 +230,8 @@ const translations = {
             cta: "とりあえず気軽に無料相談",
             stats: {
                 countries: "アフリカ54カ国",
-                local: "現地ネットワーク",
-                support: "サポート"
+                local: "カスタマーサポート",
+                support: "レスポンス時間"
             }
         },
         problem: {
@@ -244,6 +252,14 @@ const translations = {
                 interpreter: {
                     title: "通訳や現地コーディネーターを探したいが、信頼できる人が見つからない",
                     desc: "Need interpreters or coordinators you can actually trust?"
+                },
+                meeting: {
+                    title: "現地企業や団体とのアポ調整が難しく、スケジュール管理に時間がかかる",
+                    desc: "Struggling to coordinate meetings or schedules with local companies or organizations?"
+                },
+                business: {
+                    title: "視察で得た情報をどう事業化につなげるか分からない",
+                    desc: "Unsure how to turn what you learned during the trip into an actual business opportunity?"
                 }
             }
         },
@@ -254,7 +270,7 @@ const translations = {
         },
         role: {
             subtitle: "私たちの役割",
-            title: "私たちは旅行代理店ではなく、アフリカビジネスのコンシェルジュです。",
+            title: "私たちは旅行代理店ではなく<br />アフリカビジネスのコンシェルジュです。",
             description: "貴社の目的・予算・条件に合わせて、最適な人・場所・リソースを直接コーディネート。単なる手配ではなく、成果を出すための現地戦略づくりを支援します。"
         },
         services: {
