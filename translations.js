@@ -4,10 +4,10 @@ const translations = {
         nav: {
             services: "Services",
             solution: "Solution",
-            whyUs: "Why Us",
-            cases: "Case Studies",
+            whyUs: "Why us",
+            cases: "Case studies",
             contact: "Contact",
-            consultation: "Free Consultation",
+            consultation: "Free consultation",
             language: "EN"
         },
         hero: {
