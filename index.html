@@ -51,6 +51,48 @@
     <!-- DNS Prefetch for External Resources -->
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
+    <!-- Early Language Detection to prevent FOUC (Flash of Untranslated Content) -->
+    <script>
+      (function() {
+        // Get preferred language early (before translations.js loads)
+        // Priority: URL param > localStorage > browser language > default (en)
+        const VALID_LANGUAGES = ['en', 'ja'];
+        const DEFAULT_LANGUAGE = 'en';
+        let preferredLang = DEFAULT_LANGUAGE;
+        
+        // Check URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang && VALID_LANGUAGES.includes(urlLang)) {
+          preferredLang = urlLang;
+          try {
+            localStorage.setItem('preferredLanguage', urlLang);
+          } catch(e) {}
+        } else {
+          // Check localStorage
+          try {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && VALID_LANGUAGES.includes(savedLang)) {
+              preferredLang = savedLang;
+            }
+          } catch(e) {}
+          
+          // If still default, check browser language (only if Japanese)
+          if (preferredLang === DEFAULT_LANGUAGE) {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang && (browserLang.startsWith('ja') || browserLang.toLowerCase().startsWith('ja-'))) {
+              preferredLang = 'ja';
+            }
+          }
+        }
+        
+        // Set HTML lang attribute immediately to prevent FOUC
+        if (document.documentElement) {
+          document.documentElement.lang = preferredLang;
+        }
+      })();
+    </script>
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">

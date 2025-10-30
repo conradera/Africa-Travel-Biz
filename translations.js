@@ -24,28 +24,28 @@ const translations = {
             title: "Are you facing these challenges with your business trip or research in Africa?",
             issues: {
                 visa: {
-                    title: "ビザやワクチンなど、渡航に必要なものがわからない",
-                    desc: "Not sure about visa or vaccination requirements?"
+                    title: "Not sure about visa or vaccination requirements?",
+                    desc: "Planning a business trip to Africa but unsure about entry requirements, visas, or necessary vaccinations? We provide comprehensive guidance."
                 },
                 transfer: {
-                    title: "空港送迎の方法がわからない",
-                    desc: "Unclear how to arrange airport transfers?"
+                    title: "Unclear how to arrange airport transfers?",
+                    desc: "Navigating airport transfers in unfamiliar African cities can be challenging. We coordinate safe and reliable transportation."
                 },
                 hotel: {
-                    title: "ネットで見つけたホテルが安全で清潔か不安",
-                    desc: "Worried whether online-listed hotels are safe and clean?"
+                    title: "Worried whether online-listed hotels are safe and clean?",
+                    desc: "Concerned about hotel quality and safety? Our local network ensures accommodation recommendations meet your standards."
                 },
                 interpreter: {
-                    title: "通訳や現地コーディネーターを探したいが、信頼できる人が見つからない",
-                    desc: "Need interpreters or coordinators you can actually trust?"
+                    title: "Need interpreters or coordinators you can actually trust?",
+                    desc: "Finding reliable local interpreters and coordinators is crucial. We connect you with vetted professionals you can depend on."
                 },
                 meeting: {
-                    title: "現地企業や団体とのアポ調整が難しく、スケジュール管理に時間がかかる",
-                    desc: "Struggling to coordinate meetings or schedules with local companies or organizations?"
+                    title: "Struggling to coordinate meetings or schedules with local companies or organizations?",
+                    desc: "Time-consuming schedule coordination with local partners? We handle the logistics so you can focus on your business goals."
                 },
                 business: {
-                    title: "視察で得た情報をどう事業化につなげるか分からない",
-                    desc: "Unsure how to turn what you learned during the trip into an actual business opportunity?"
+                    title: "Unsure how to turn what you learned during the trip into an actual business opportunity?",
+                    desc: "Turn your research findings into actionable business strategies. We help transform insights into concrete opportunities."
                 }
             }
         },
@@ -56,8 +56,8 @@ const translations = {
         },
         role: {
             subtitle: "Our Role",
-            title: "私たちは旅行代理店ではなく<br />アフリカビジネスのコンシェルジュです。<br />We Are Not a Travel Agency — We're Your Business Concierge in Africa.",
-            description: "We coordinate the best local people, locations, and resources based on your goals and budget. Our focus is not just on arrangements, but on strategies that drive results."
+            title: "We Are Not a Travel Agency — We're Your Business Concierge in Africa.",
+            description: "We coordinate the best local people, locations, and resources based on your goals and budget. Our focus is not just on arrangements, but on strategies that drive results.<br /><br /><em>\"Giving your company the same peace of mind as having a trusted local friend.\"</em>"
         },
         services: {
             title: "Our Services",
@@ -251,27 +251,27 @@ const translations = {
             issues: {
                 visa: {
                     title: "ビザやワクチンなど、渡航に必要なものがわからない",
-                    desc: "Not sure about visa or vaccination requirements?"
+                    desc: "アフリカ出張の準備を進めているが、入国要件やビザ、必要なワクチンについて不明な点が多い。包括的なガイダンスを提供します。"
                 },
                 transfer: {
                     title: "空港送迎の方法がわからない",
-                    desc: "Unclear how to arrange airport transfers?"
+                    desc: "慣れないアフリカの都市での空港送迎は難しいもの。安全で信頼性の高い交通手段をコーディネートします。"
                 },
                 hotel: {
                     title: "ネットで見つけたホテルが安全で清潔か不安",
-                    desc: "Worried whether online-listed hotels are safe and clean?"
+                    desc: "ホテルの質や安全性が心配？現地ネットワークを通じて、あなたの基準を満たす宿泊施設を紹介します。"
                 },
                 interpreter: {
                     title: "通訳や現地コーディネーターを探したいが、信頼できる人が見つからない",
-                    desc: "Need interpreters or coordinators you can actually trust?"
+                    desc: "信頼できる現地通訳やコーディネーターを見つけることは重要です。審査済みのプロフェッショナルをご紹介します。"
                 },
                 meeting: {
                     title: "現地企業や団体とのアポ調整が難しく、スケジュール管理に時間がかかる",
-                    desc: "Struggling to coordinate meetings or schedules with local companies or organizations?"
+                    desc: "現地パートナーとのスケジュール調整に時間がかかる？私たちがロジスティクスを担当するので、ビジネス目標に集中できます。"
                 },
                 business: {
                     title: "視察で得た情報をどう事業化につなげるか分からない",
-                    desc: "Unsure how to turn what you learned during the trip into an actual business opportunity?"
+                    desc: "調査結果を実行可能なビジネス戦略に変える。私たちは洞察を具体的な機会に変換するお手伝いをします。"
                 }
             }
         },
@@ -287,7 +287,7 @@ const translations = {
         },
         services: {
             title: "サービス内容",
-            subtitle: "Service Categories",
+            subtitle: "サービスカテゴリー",
             cta: "サービスの詳細を相談する",
             "1": {
                 title: "出張・視察サポート",
@@ -313,26 +313,26 @@ const translations = {
         strengths: {
             subtitle: "なぜ選ばれるのか",
             title: "強み",
-            description: "Our Competitive Advantages",
+            description: "私たちの競争優位性",
             "1": {
                 title: "アフリカ54カ国に広がる信頼ネットワーク",
-                desc: "Trusted network across 54 African countries"
+                desc: "アフリカ54カ国に広がる信頼できるネットワーク"
             },
             "2": {
                 title: "現地直結でスピード・コスト効率に優れる",
-                desc: "Direct coordination for speed and cost efficiency"
+                desc: "スピードとコスト効率のための直接的なコーディネーション"
             },
             "3": {
                 title: "日本人スタッフが一貫サポート",
-                desc: "End-to-end support by Japan-based specialists"
+                desc: "日本を拠点とする専門家による完全なサポート"
             },
             "4": {
                 title: "多言語対応（日本語・英語・フランス語）",
-                desc: "Multilingual operation (JP / EN / FR)"
+                desc: "多言語対応（日本語・英語・フランス語）"
             },
             "5": {
                 title: "現地雇用を生む社会的インパクト",
-                desc: "Creating local employment and social impact"
+                desc: "現地雇用の創出と社会的インパクトの創出"
             }
         },
         cases: {
@@ -371,23 +371,23 @@ const translations = {
             steps: {
                 "1": {
                     title: "お問い合わせ",
-                    desc: "Contact Us"
+                    desc: "ニーズと目標についてご連絡ください"
                 },
                 "2": {
                     title: "ヒアリング",
-                    desc: "Hearing & Consultation"
+                    desc: "詳細な要件を確認いたします"
                 },
                 "3": {
                     title: "ご提案・見積",
-                    desc: "Proposal & Estimate"
+                    desc: "ご要望に合わせた提案と見積もりを提供します"
                 },
                 "4": {
                     title: "ご契約・準備",
-                    desc: "Agreement & Preparation"
+                    desc: "詳細を確定し、実行準備を行います"
                 },
                 "5": {
                     title: "実施・報告・アフターサポート",
-                    desc: "Execution, Reporting & After-Support"
+                    desc: "実行、報告、継続的なサポートを提供します"
                 }
             }
         },
@@ -454,27 +454,100 @@ const translations = {
     }
 };
 
-// Translation functionality
-let currentLanguage = 'en';
+/**
+ * Translation System for Africa Travel Biz
+ * Supports English (en) and Japanese (ja) languages
+ * 
+ * Features:
+ * - URL parameter support (?lang=ja)
+ * - localStorage persistence
+ * - Fallback to English for missing translations
+ * - Dynamic HTML lang attribute updates
+ * - Prevents FOUC (Flash of Untranslated Content)
+ */
 
-function translatePage(language) {
-    currentLanguage = language;
-    const elements = document.querySelectorAll('[data-i18n]');
+// Valid language codes - only 'en' and 'ja' are supported
+const VALID_LANGUAGES = ['en', 'ja'];
+const DEFAULT_LANGUAGE = 'en';
+
+// Current active language (defaults to English)
+let currentLanguage = DEFAULT_LANGUAGE;
+
+/**
+ * Get translation for a given key and language
+ * Falls back to English if translation not found in requested language
+ * 
+ * @param {string} key - Translation key (e.g., 'nav.services')
+ * @param {string} language - Language code ('en' or 'ja')
+ * @returns {string|null} - Translated text or null if not found
+ */
+function getTranslation(key, language) {
+    // Validate language parameter
+    if (!VALID_LANGUAGES.includes(language)) {
+        language = DEFAULT_LANGUAGE;
+    }
     
+    const keys = key.split('.');
+    let translation = translations[language];
+    
+    // Navigate through nested object structure
+    for (const k of keys) {
+        if (translation && typeof translation === 'object' && translation[k]) {
+            translation = translation[k];
+        } else {
+            // Translation not found in requested language - try English fallback
+            if (language !== DEFAULT_LANGUAGE) {
+                let fallbackTranslation = translations[DEFAULT_LANGUAGE];
+                for (const fk of keys) {
+                    if (fallbackTranslation && typeof fallbackTranslation === 'object' && fallbackTranslation[fk]) {
+                        fallbackTranslation = fallbackTranslation[fk];
+                    } else {
+                        return null;
+                    }
+                }
+                return typeof fallbackTranslation === 'string' ? fallbackTranslation : null;
+            }
+            return null;
+        }
+    }
+    
+    // Return translation if it's a string, otherwise null
+    return typeof translation === 'string' ? translation : null;
+}
+
+/**
+ * Apply translations to all elements with data-i18n attributes
+ * Updates HTML lang attribute and language toggle buttons
+ * 
+ * @param {string} language - Language code to apply ('en' or 'ja')
+ */
+function translatePage(language) {
+    // Validate language parameter
+    if (!VALID_LANGUAGES.includes(language)) {
+        console.warn(`Invalid language: ${language}. Defaulting to ${DEFAULT_LANGUAGE}.`);
+        language = DEFAULT_LANGUAGE;
+    }
+    
+    currentLanguage = language;
+    
+    // Update all elements with data-i18n attribute
+    const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
+        if (!key) return;
+        
         const translation = getTranslation(key, language);
         
         if (translation) {
+            // Handle different element types
             if (element.tagName === 'INPUT' && element.type === 'submit') {
                 element.value = translation;
             } else if (element.hasAttribute('placeholder')) {
-                element.placeholder = translation;
+                // Don't override placeholder here - handled separately
+                element.textContent = translation;
             } else {
                 element.innerHTML = translation;
             }
-        } else {
-            // Translation not found - element will keep its default text
         }
     });
     
@@ -482,50 +555,120 @@ function translatePage(language) {
     const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
     placeholderElements.forEach(element => {
         const key = element.getAttribute('data-i18n-placeholder');
+        if (!key) return;
+        
         const translation = getTranslation(key, language);
         if (translation) {
             element.placeholder = translation;
         }
     });
     
-    // Update language toggle buttons
+    // Update language toggle button text
     const languageButtons = document.querySelectorAll('#language-toggle span, #mobile-language-toggle span');
     languageButtons.forEach(button => {
         button.textContent = language === 'en' ? 'EN' : 'JP';
     });
     
-    // Update document language attribute
+    // Update HTML lang attribute for accessibility and SEO
+    if (document.documentElement) {
     document.documentElement.lang = language;
 }
 
-function getTranslation(key, language) {
-    const keys = key.split('.');
-    let translation = translations[language];
-    
-    for (const k of keys) {
-        if (translation && translation[k]) {
-            translation = translation[k];
-        } else {
-            return null;
-        }
+    // Update meta tags if they exist
+    const metaLang = document.querySelector('meta[property="og:locale"]');
+    if (metaLang) {
+        metaLang.setAttribute('content', language === 'en' ? 'en_US' : 'ja_JP');
     }
-    
-    return translation;
 }
 
+/**
+ * Toggle between English and Japanese
+ * Stores preference in localStorage
+ * Made globally accessible for onclick handlers
+ */
 function toggleLanguage() {
     const newLanguage = currentLanguage === 'en' ? 'ja' : 'en';
-    currentLanguage = newLanguage;
     translatePage(newLanguage);
     
-    // Store language preference
+    // Persist language preference
+    try {
     localStorage.setItem('preferredLanguage', newLanguage);
+    } catch (e) {
+        // localStorage might not be available (private browsing, etc.)
+        console.warn('Could not save language preference:', e);
+    }
 }
 
-// Initialize translation system when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Check for saved language preference
-    const savedLanguage = localStorage.getItem('preferredLanguage');
-    currentLanguage = savedLanguage || 'en';
-    translatePage(currentLanguage);
-});
+/**
+ * Get the preferred language from multiple sources:
+ * 1. URL parameter (?lang=ja) - highest priority
+ * 2. localStorage saved preference
+ * 3. Browser language (if Japanese)
+ * 4. Default to English
+ * 
+ * @returns {string} - Language code ('en' or 'ja')
+ */
+function getPreferredLanguage() {
+    // Priority 1: Check URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    if (urlLang && VALID_LANGUAGES.includes(urlLang)) {
+        // Save URL preference to localStorage
+        try {
+            localStorage.setItem('preferredLanguage', urlLang);
+        } catch (e) {
+            // Ignore localStorage errors
+        }
+        return urlLang;
+    }
+    
+    // Priority 2: Check localStorage
+    try {
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang && VALID_LANGUAGES.includes(savedLang)) {
+            return savedLang;
+        }
+    } catch (e) {
+        // localStorage might not be available
+    }
+    
+    // Priority 3: Check browser language (only if Japanese)
+    const browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang && (browserLang.startsWith('ja') || browserLang.toLowerCase().startsWith('ja-'))) {
+        return 'ja';
+    }
+    
+    // Default: English
+    return DEFAULT_LANGUAGE;
+}
+
+/**
+ * Initialize translation system
+ * Sets lang attribute early to prevent FOUC, then applies translations when DOM is ready
+ */
+function initTranslationSystem() {
+    // Get preferred language early
+    const preferredLang = getPreferredLanguage();
+    
+    // Set HTML lang attribute immediately (before DOMContentLoaded)
+    // This prevents FOUC (Flash of Untranslated Content)
+    if (document.documentElement) {
+        document.documentElement.lang = preferredLang;
+    }
+    
+    // Apply translations when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            translatePage(preferredLang);
+        });
+    } else {
+        // DOM is already loaded
+        translatePage(preferredLang);
+    }
+}
+
+// Make toggleLanguage globally accessible
+window.toggleLanguage = toggleLanguage;
+
+// Initialize translation system
+initTranslationSystem();
