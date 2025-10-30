@@ -784,58 +784,38 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Business Hours -->
-                        <div class="contact-hours">
-                            <h4 data-i18n="contact.hours.title">Business Hours</h4>
-                            <div class="contact-hours-content">
-                                <p data-i18n="contact.hours.weekdays">Monday – Friday: 9:00 AM – 6:00 PM JST</p>
-                                <p class="contact-hours-note" data-i18n="contact.hours.weekends">
-                                    Weekend consultations available by appointment
-                                </p>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <i class="fab fa-line"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label">LINE</p>
+                                    <div class="line-contact">
+                                        <img src="WhatsApp Image 2025-10-30 at 10.58.41.jpeg" alt="LINE QR Code" class="line-qr-code" style="max-width: 200px; height: auto; margin: 1rem auto; border-radius: 8px; display: block;">
+                                        <a href="https://lin.ee/Q0Irxme" class="contact-detail-link" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; text-align: center;">
+                                            Add us on LINE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Business Hours as a card -->
+                            <div class="contact-detail contact-hours-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <p class="contact-detail-label" data-i18n="contact.hours.title">Business Hours</p>
+                                    <div class="contact-hours-content">
+                                        <p class="contact-detail-text" data-i18n="contact.hours.weekdays">Monday – Friday: 9:00 AM – 6:00 PM JST</p>
+                                        <p class="contact-detail-note" data-i18n="contact.hours.weekends">
+                                            Weekend consultations available by appointment
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="contact-form-container">
-                        <form class="contact-form" id="contact-form" novalidate>
-                            <div class="form-group">
-                                <label for="name" data-i18n="contact.form.name">Name *</label>
-                                <input type="text" id="name" name="name" required minlength="2" maxlength="100" placeholder="田中太郎" data-i18n-placeholder="contact.form.namePlaceholder" autocomplete="name">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="company" data-i18n="contact.form.company">Company Name *</label>
-                                <input type="text" id="company" name="company" required minlength="2" maxlength="100" placeholder="ABC株式会社" data-i18n-placeholder="contact.form.companyPlaceholder" autocomplete="organization">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email" data-i18n="contact.form.email">Email Address *</label>
-                                <input type="email" id="email" name="email" required maxlength="254" placeholder="tanaka@example.com" data-i18n-placeholder="contact.form.emailPlaceholder" autocomplete="email">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone" data-i18n="contact.form.phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" maxlength="20" placeholder="+81-90-xxxx-xxxx (optional)" data-i18n-placeholder="contact.form.phonePlaceholder" autocomplete="tel">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message" data-i18n="contact.form.message">Message *</label>
-                                <textarea id="message" name="message" required minlength="10" maxlength="2000" rows="5" placeholder="Tell us about your business needs, timeline, or any specific questions..." data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn" aria-label="Submit contact form">
-                                <span class="btn-text" data-i18n="contact.form.submit">Send Message</span>
-                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                            </button>
-
-                            <p class="form-disclaimer" data-i18n="contact.form.disclaimer">
-                                By submitting, you agree to our privacy policy. We will not share 
-                                your information with third parties.
-                            </p>
-                        </form>
                     </div>
                 </div>
             </div>
